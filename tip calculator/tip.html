@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip calculator</title>
+    <link rel="stylesheet" href="tip.css" />
+  </head>
+  <body>
+    <h1>Restro Tip Calculator</h1>
+    <div class="container">
+        <label for="bill">Bill Amount :</label> 
+      <input type="text" placeholder="Enter bill amount" id="billamo" /> <br>
+     
+      <label for="tip">Tip Percentage :</label> 
+      <input type="text" placeholder="Enter tip percentage" id="tipperc" />
+      <p id="tipamount">Tip Amount :</p>
+      <p id="totalamount">Total Amount :</p>
+
+      <button id="calculate" onclick="calc()">Calculate</button>
+      <button id="Reset" onclick="res()">Reset</button>
+    </div>
+
+    <script src="tip.js"></script>
+  </body>
+</html>
