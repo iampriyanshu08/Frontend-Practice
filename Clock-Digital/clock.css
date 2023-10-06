@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(54, 79, 190);
+  background-image: url("https://images.pexels.com/photos/2156/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position:center;
+ 
+  backdrop-filter: blur(5px);
+
+  display: grid;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: fit-content;
+  margin: auto;
+  padding: 100px 20px;
+  border-radius: 100px;
+  position: relative;
+  background-color: rgb(49, 48, 48, 0.38);
+}
+
+.container::before,
+.container::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: absolute;
+  filter: blur(17px);
+  z-index: -3;
+}
+
+.clock {
+  font-size: 5rem;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+#hour,
+#minute,
+#second {
+  position: relative;
+  padding-bottom: 10px;
+
+}
+
+#hour ::after,
+#minute ::after,
+#second ::after {
+  font-size: 20px;
+  font-weight: normal;
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  color: rgb(45, 26, 220);
+}
+#hour::after {
+  content: "Hours";
+}
+#minute::after {
+  content: "Minutes";
+}
+#second::after {
+  content: "Seconds";
+}
+
+@media only screen and (max-width: 600px) {
+  .clock {
+    font-size: 2.5rem;
+  }
+
+  #hour::after,
+  #minute::after,
+  #sesecond::after {
+    left: 5px;
+    font-size: 12px;
+  }
+
+  .container::before,
+  .container::after {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 200px;
+  color: rgb(234, 136, 51);
+  margin: auto;
+}
