@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #4a4343;
+    background-color:rgb(110, 106, 109);
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    background-color:burlywood ;
+    background-image: linear-gradient(160deg, #83bee0 0%, #80d0c7 100%);;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    box-shadow: 10px,10px,10px,grey;
+    border: 1ps grey solid;
+}
+
+h2{
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    top: -20px;
+    border-radius: 10px, 10px ,0, 0 ;
+    animation-name: stared;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    box-sizing: border-box;
+    color:  #e22a2a;
+}
+
+
+@keyframes stared {
+    0%{
+font-size: 20px;
+    }
+    50%{
+        font-size: 30px;
+    }
+    100%{
+        font-size: 20px;
+    }
+}
+
+
+.info{
+    padding-top: 50px;
+}
+.info p {
+    background-color: rgba(37, 25, 25, 0.397);
+    font-size: 20px;
+    padding: 20px 0;
+    font-weight: bold;
+    color:white
+
+}
+
+#show{
+    width: 100%;
+    background-color: rgba(37, 25, 25, 0.397);
+  color: white;
+  padding: 20px 0;
+  font-size: larger;
+  font-weight: bold;
+}
+
+input{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: larger;
+    margin: 20px 0;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+}
+button{
+    
+    width:50% ;
+    margin:20px 0 ;
+    padding:10px 15px ;
+    font-size:larger ;
+    font-weight:bold ;
+    border-radius: 50px;
+
+}
+.cont {
+    gap: 20px;
+    display: flex;
+    margin :10px;
+    padding: 20px;
+    
+}
+button:hover{
+    background-color: red;
+}
