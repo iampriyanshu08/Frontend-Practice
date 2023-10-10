@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="age.css" />
+  </head>
+  <body>
+    <h1>Age calculator 🙎🏻</h1>
+    <main class="container">
+      <div class="input">
+        <label for="birthdate">Enter your date of birth :</label>
+        <input type="date" id="birthdate" />
+      </div>
+      <ul>
+        <li><span class="details" id="year"></span>Years</li>
+        <li><span class="details" id="month"></span>Month</li>
+        <li><span class="details" id="day"></span>Days</li>
+        <li><span class="details" id="hour"></span>Hours</li>
+        <li><span class="details" id="minute"></span>Minutes</li>
+        <li><span class="details" id="second"></span>Seconds</li>
+      </ul>
+      <div class="btns">
+        <button onclick="calculate()">Calculate</button>
+        <button onclick="reset()">Reset</button>
+      </div>
+    </main>
+
+    <script src="age.js"></script>
+  </body>
+</html>
