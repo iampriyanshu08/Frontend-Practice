@@ -1,0 +1,44 @@
+body {
+  display: grid;
+  transition: 1s;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.main {
+  border: 5px solid rgb(255, 247, 0);
+  border-radius: 20px;
+  width: 30%;
+  height: 50vh;
+  display: grid;
+  place-items: center;
+  padding: 15px 15px;
+  background-color: white;
+ 
+}
+
+.displayBox {
+  
+  width: 50%;
+  height: 20vh;
+  display: grid;
+  place-items: center;
+  background-color: white;
+}
+
+button {
+  margin: auto;
+  padding: 10px;
+  font-size: larger;
+  border-radius: 20px;
+  height: 50px;
+
+}
+
+
+
+

@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.pexels.com/photos/5475793/pexels-photo-5475793.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(10px);
+}
+.container {
+  width: 700px;
+  height: 500px;
+  background-image: linear-gradient(to right bottom, #ffa585, #45c5d8);
+  color: white;
+  margin: 100px 10px;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  border-radius: 20px;
+  border-color: #c22e5d;
+  border-style: dotted;
+  border-width: 10px;
+}
+
+
+
+input {
+  
+  position: relative;
+  
+  font-size: 15px;
+  padding: 7px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 87%;
+  text-overflow: ellipsis;
+  
+}
+
+button {
+  font-size: 15px;
+  margin-top: 10px;
+  padding: 10px;
+  color: white;
+  background-color: #ff7da6;
+  border-radius: 20px;
+  border: none;
+}
+button:hover {
+  background-color: rgb(183, 191, 78);
+}
+
+button:active {
+  background-color: rgb(186, 97, 125);
+}
+h1 {
+  font-size: 40px;
+  color: steelblue;
+}
+p {
+  font-size: 25px;
+  margin: 20px;
+}
+h3 {
+  font-size: 20px;
+  color: #c22e5d;
+}
+h2{
+    margin-bottom :2px;
+}
+
+input[type="checkbox"] {
+ 
+  width: 60px;
+  height: 20px;
+}
+
+.lower {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#passLen {
+  margin-top: 10px;
+  
+}
+
+#char {
+  margin-right: 60px;
+}
+
+input[type="range"] {
+  width: 50%;
+}
+
+#showPass{
+    height: 45px;
+}
