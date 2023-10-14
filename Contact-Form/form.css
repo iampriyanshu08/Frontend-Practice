@@ -1,0 +1,79 @@
+body {
+    background-image: url('https://images.pexels.com/photos/7135037/pexels-photo-7135037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#form {
+    width: 30%;
+    margin: 4% 30%;
+    padding: 20px;
+    background-color: rgba(245, 245, 245, 0.505);
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+
+#form h1 {
+    color: #0f2027;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+}
+
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 95%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+
+
+.input-control #nerror {
+    color: white;
+    font-size: 15px;
+    height: 13px;
+    padding: 10px;
+    
+}
+.input-control #merror {
+    color: white;
+    font-size: 15px;
+    height: 13px;
+    padding: 10px;
+}
+.input-control #msgerror {
+    color: white;
+    font-size: 15px;
+    height: 13px;
+    padding: 10px;
+}
+
+#submission {
+    color: white;
+    font-size: 15px;
+    height: 13px;
+    padding: 10px;
+    text-align: center;
+}

@@ -74,3 +74,10 @@ randomColor.addEventListener('click', displayRandomColorCodes);
 
 // Initial display
 displayRandomColorCodes();
+
+
+
+
+
+
+
