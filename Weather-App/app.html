@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <script defer  src="app.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/8f80acbbcf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="search">
+            <input type="search" class="userInput" placeholder="Enter your city name here">
+            <button  class="searchBtn"><i class="fa-solid fa-magnifying-glass fa-beat"></i></button>
+        </div>
+        <div class="errMsg">
+            <p>Please Enter a valid city name </p>
+        </div>
+        <div class="weatherInfo">
+            <div class="weatherHighlight">
+                <img src="./png-cloud.png" class="weatherIcon">
+                <p class="temp">22°C</p>
+                <div class="main">Clouds</div>
+                <p class="city">Pune</p>
+            </div>
+
+
+            <div class="weatherDetails">
+                <div class="cols">
+                    <img src="./png-humidity.png" alt="">
+                    <div>
+                        <p class="humidity">66%</p>
+                        <p>Humidity</p>
+                    </div>
+
+                </div>
+                <div class="cols">
+                    <img src="./png-wind.png" alt="">
+                    <div>
+
+
+                        <p class="wind">5.3 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tip">
+                <p> <i class="fa-regular fa-lightbulb fa-flip"></i>Tip for the day:</p>
+                <p class="tiplist"> To protect yourself during extreme heat, stay hydrated by drinking
+                    plenty of water.</p>
+            </div>
+
+
+
+
+        </div>
+    </div>
+   
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  list-style: none;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 600px;
+  border: 2px rgba(128, 128, 128, 0.452) solid;
+}
+
+.banner {
+  padding: 20px;
+  background-image: url("https://i.postimg.cc/1XSgdL7c/blurry-gradient-haikei.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.banner h1 {
+  width: 48%;
+}
+
+form {
+  background-color: lightblue;
+  padding: 20px 30px;
+}
+input {
+  padding: 7px;
+}
+.title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.techList {
+  display: flex;
+  gap: 80px;
+  justify-content: start;
+}
+.developerDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 5px rgba(128, 128, 128, 0.301) solid;
+  padding: 15px 0;
+}
+
+.tech {
+  border-bottom: 5px rgba(128, 128, 128, 0.301) solid;
+  padding: 20px 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex * {
+  width: 48%;
+}
+
+.survey .title {
+  margin-top: 15px;
+}
+
+.q {
+  margin: 15px 0;
+}
+.q p {
+  margin: 5px 0;
+}
+.q input {
+  margin-left: 8px;
+}
+
+.btns {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns * {
+  width: 48%;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.mobile {
+  display: none;
+}
+
+
+@media screen and (max-width: 650px) {
+    .container{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        font-weight: bold;
+    }
+}
