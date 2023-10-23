@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    
+
+:root{
+    --blue: #005eff;
+    --dark : #191e24;
+}
+
+body{
+    font-family: 'poppins', 'sans-serif';
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.content h1{
+    color: var(--dark);
+}
+
+.content h1
+.content p{
+    margin: 20px;
+
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--dark);
+    padding: 20px;
+    color: #fff;
+}
+footer h2 ,footer h3{
+    padding: 8px 0;
+}
+
+footer li , footer p{
+    color: lightgray;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+footer a{
+    text-decoration: none;
+    color: lightgray;
+}
+footer li::marker {
+    content: '✓ ';
+    color: var(--blue);
+}
+
+.fooContainer{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.content-col{
+width: 255px;
+list-style-position: inside;
+margin: 5px;
+padding: 10px;
+}
+col1 i{
+    color: var(--blue);
+    margin-left: 5px;
+}
+
+.col1 li::marker {
+    content: '';
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+}
+footer input{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 8px;
+}
+
+footer input[type="button"]{
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    background-color: var(--blue);
+    color: white;
+    width: fit-content;
+}
+footer input[type="email"]{
+    border-radius: 20px 0 0 20px;
+    background-color: white;
+    color: black;
+}
+
+.content-col4 p ,
+.search{
+    margin-bottom: 12px;
+}
+
+.social i {
+    padding: 8px;
+    font-size: large;
+    /* color: grey; */
+    transition: 0.5s;
+}
+.social i:hover{
+    transition: 0.5s;
+    transform: scale(1.7);
+}
+copyright p {
+text-align: center;
+color: lightgray;
+font-weight: 400;
+}
+
+@media only screen and (max-width:600px) {
+    footer{
+        padding: 10px;
+    }
+    .content-col{
+        width: 100%;
+        margin-right: 20px;
+    }
+}
