@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="data.css">
+    <script src="https://kit.fontawesome.com/8f80acbbcf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Data Units Conversion</h1>
+<div class="mainC">
+    <input type="number" placeholder="Enter your value" id="userInput">
+    <div class="options">
+        <div class="from">
+            <select name="inputType" id="inputType">
+                <option value="" disabled selected hidden>From:</option>
+                <option value="kilobyte">Kilobyte</option>
+                <option value="megabyte">Megabyte</option>
+                <option value="gigabyte">Gigabyte</option>
+                <option value="terabyte">Terabyte</option>
+            </select>
+        </div>
+        <i class="fa-solid fa-arrows-left-right fa-flip"></i>
+        <div class="to">
+            <select name="outputType" id="outputType">
+                <option value="" disabled selected hidden>To:</option>
+                <option value="kilobyte">Kilobyte</option>
+                <option value="megabyte">MegaByte</option>
+                <option value="gigabyte">Gigabyte</option>
+                <option value="terabyte">Terabyte</option>
+            </select>
+        </div>
+
+    </div>
+    <div id="displayO">Output :</div>
+    <button onclick="convertData()">Convert</button>
+    <button onclick="reset()">Reset</button>
+</div>
+
+
+
+    <script src="data.js"></script>
+</body>
+</html>
