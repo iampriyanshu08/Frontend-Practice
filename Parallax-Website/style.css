@@ -1,0 +1,85 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 15px;
+  font-family: lato,sans-serif;
+  line-height: 1.8em;
+  color: #666;
+  scroll-behavior:smooth;
+  
+
+}
+
+
+.img1{
+    background-image: url(./img/image\ 5.jpg);
+    min-height: 100%;
+   
+}
+.img2{
+    background-image: url(./img/image\ 3.jpg);
+    min-height: 100%;
+   
+}
+.img3{
+    background-image: url(./img/image\ 4.jpg);
+    min-height: 100%;
+   
+}
+.img4{
+    background-image: url(./img/image\ 7.jpg);
+    min-height: 100%;
+   
+}
+
+.img1,.img2,.img3,.img4{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.img1,.img2,.img3,.img4:hover{
+    transform: scale(10px);
+}
+
+.ptxt{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 4rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.textbg{
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+    font-weight: 800;
+}
+
+.section{
+    padding: 50px 80px;
+    text-align: center;
+}
+.section1-txt{
+    background-color: #282e34;
+    color: #ddd;
+}
+.section p{
+    text-align: justify;
+}
+
+.section h2{
+    font-size: 2rem;
+}
+
+.section2-txt{
+    background-color: #282e34;
+    color: #ddd;
+}
