@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Wesbite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/logo12.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/8f80acbbcf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="container navi">
+            <div class="nav-logo">
+                <img src="./img/logo12.jpg" alt="logo">
+            </div>
+            <div class="nav-links " id="navi-links">
+                <a href="">Home</a>
+                <a href="">Services</a>
+                <a href="">About us</a>
+                <a href="">Contact us</a>
+               
+              
+            </div>
+            <a  class="menubar toggle" id="menu-toggle"> <i class="fa-solid fa-bars"></i></a>
+
+            
+        </div>
+        
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <div class="hero-img"><img src="./img/hero_image.png" alt=""></div>
+            <div class="hero-cont">
+                <div class="tag">
+                    <h3>50% Off on all products</h3>
+                </div>
+                <h1>Enjoy your delicious food</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quidem quisquam eaque aut est vero
+                    maxime id! Error deserunt quam voluptatibus excepturi, nobis obcaecati, ducimus perspiciatis ullam
+                    minima mollitia non assumenda, dolor modi? Dolores facere voluptas ipsa quas laboriosam neque
+                    inventore pariatur at tenetur molestiae, laudantium magnam ab sit ducimus?</p>
+                <button class="explore-btn">Explore More</button>
+            </div>
+        </div>
+        <section class="feat">
+            <div class="discount">
+                <div class="imge"><img src="./img/discount.png" alt=""></div>
+                <div class="dis-info">
+                    <h3>Discount Voucher</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, enim.</p>
+                </div>
+            </div>
+            <div class="fresh">
+                <div class="imge"><img src="./img/fresh.png" alt=""></div>
+                <div class="fresh-info">
+                    <h3>Fresh Healthy Food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, enim.</p>
+                </div>
+            </div>
+            <div class="delivery">
+                <div class="imge"><img src="./img/delivery.png" alt=""></div>
+                <div class="del-info">
+                    <h3>Fast Home Delivery</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, enim.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="divider"></div>
+
+
+        <div class="menu-sec">
+            <div class="tag">Our Menu</div>
+            <h2>Explore Our Menu</h2>
+            <div class="grid">
+                <div class="item1">
+                    <img src="./img/grid_image1.png" alt="image1">
+                </div>
+                <div class="item2">
+                    <img src="./img/grid_image2.png" alt="image1">
+                </div>
+                <div class="item3">
+                    <img src="./img/grid_image3.png" alt="image1">
+                </div>
+                <div class="item4">
+                    <img src="./img/grid_image4.png" alt="image1">
+                </div>
+                <div class="item5">
+                    <img src="./img/grid_image5.png" alt="image1">
+                </div>
+                <div class="item6">
+                    <img src="./img/grid_image6.png" alt="image1">
+                </div>
+                <div class="item7">
+                    <img src="./img/grid_image7.png" alt="image1">
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <footer>
+        <div class="footer-cont container">
+            <div class="logo">
+                <img src="./img/logo12.jpg" alt="">
+            </div>
+            <div class="links">
+                <h3>Main Link</h3>
+                <ul>
+                    <li><a>Order Tracking</a></li>
+                    <li> <a>New Order</a></li>
+                    <li> <a>Contact Us</a></li>
+                    <li><a>News and Blogs</a></li>
+
+                </ul>
+                
+            </div>
+            <div class="links">
+                <h3>Support</h3>
+                <ul>
+                  <li><a>About us</a></li>  
+                  <li><a>Privacy Policy</a></li> 
+                  <li><a>Terms and Conditions</a></li>  
+                </ul>
+                 </div>
+            <div class="news">
+                <h3>Join Our Newsletter</h3>
+                <input type="email" name="email" placeholder="Enter your email address" id="email">
+                <h3>Follow Us</h3>
+                <div class="icon-cont">
+                    <div class="icon">
+                        <i class="fa-brands fa-square-facebook" style="color: royalblue;"></i>
+                       
+                        
+                        
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-square-x-twitter" style="color: black;"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-square-instagram" style="color: rgb(221, 42, 123);"></i>
+                    </div>
+
+                    <div class="icon">
+                        <i class="fa-brands fa-youtube" style="color: red;"></i>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+<script>
+    let togglebtn = document.querySelector('#menu-toggle');
+    let navLinks = document.querySelector('#navi-links');
+
+
+    togglebtn.addEventListener('click', function(){
+        navLinks.classList.toggle('active')
+    })
+</script>
+
+
+
+
+</body>
+
+</html>
