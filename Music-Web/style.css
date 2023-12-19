@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  line-height: 1.4;
+}
+section {
+  scroll-margin: 50px;
+}
+nav {
+  background-color: blue;
+  color: white;
+  padding-block: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.navbar {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  list-style-type: none;
+  transition: 1s ease-in-out;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  
+}
+.nav-links li:hover{
+    border-bottom: 2px solid gainsboro;
+    transition: 1s ease-in-out;
+}
+.menubar{
+    display: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.hero {
+  background-image: url("./img/hero_image.png");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero-container {
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 35vh;
+  text-align: center;
+}
+.hero-cont h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.hero-cont p {
+  margin-top: 20px;
+}
+
+.music {
+  background-color: rgb(37, 27, 97);
+  padding-top: 50px;
+  min-height: 60vh;
+}
+
+.music-cont {
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+.space {
+  margin-top: 20px;
+}
+.ipad img {
+  position: relative;
+  top: 300px;
+  margin-inline: auto;
+  margin-top: -255px;
+}
+.btn-red {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+.btn-blue {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.txt-cont {
+  margin-top: 350px;
+  text-align: center;
+}
+
+.mac{
+    display: flex;
+    justify-content: center;
+}
+.mac img {
+  margin: 50px 100px;
+}
+
+.Video {
+  background-image: url("./img/video.png");
+  min-height: 100vh;
+}
+
+.concert {
+  color: white;
+
+  margin: 0 auto;
+  padding-top: 30vh;
+  text-align: center;
+}
+
+.gift {
+  margin-block: 50px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.border {
+  border-bottom: 2px solid gainsboro;
+}
+
+footer {
+  background-color: rgb(37, 27, 97);
+  padding-top: 40px;
+}
+.foo-cont {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.foo-cont a {
+  color: white;
+  text-decoration: none;
+}
+.foo-cont li {
+  list-style-type: none;
+}
+
+.foo-low {
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: darkblue;
+  text-align: center;
+}
+
+#gift{
+    scroll-margin: 100px;
+}
+
+
+@media screen and (max-width:600px) {
+  html,body{
+    overflow-x: hidden;
+  }
+  body{
+    position: relative;
+  }
+  .hero-cont h1{
+    font-size: 40px;
+  }
+   
+
+    .ipad img{
+        max-width: 100%;
+        top: 270px;
+    }
+    .music{
+        max-height: 80vh;
+       padding-bottom: 110px;
+    }
+    .mac img{
+        
+        max-width: 100%;
+       /* margin-left: 15px; */
+    }
+    .gift{
+        flex-direction: column;
+    }
+    .container {
+        max-width: 100%;
+        margin-inline: 10px;
+        
+
+      }
+      .gift-cont{
+        text-align: center;
+      }
+      .txt-cont{
+        margin-top: 230px;
+      }
+    
+    .gift-img img{
+        max-width: 100%;
+    }
+    
+    .nav-links{
+        display: none;
+    }
+    .menubar{
+        display: block;
+        position: relative;
+        right: 10px;
+        
+    }
+    .foo-cont{
+        margin-left: 10px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:flex-start ;
+        gap: 20px;
+       
+       
+        
+    }
+    
+   
+    
+}
