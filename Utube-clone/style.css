@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: black;
+    color: white; */
+}
+.container {
+  /* width:200px; */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+  gap: 20px;
+  background-color: white;
+}
+.menu-icons,
+.menubar {
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  /* gap: 20px; */
+  align-items: center;
+  margin-inline: 15px;
+}
+.menu-icons img {
+  width: 30px;
+}
+
+.menubar {
+  font-size: 30px;
+}
+
+nav {
+  margin-left: 90px;
+  flex-wrap: wrap;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.ulogo img {
+  width: 120px;
+}
+
+.searchbar input {
+  border: 0.2px solid #ccc;
+  min-width: 40vw;
+  padding: 10px 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-size: 15px;
+}
+.searchbar {
+  display: flex;
+}
+
+.searchbar button {
+  border: 0.1px solid #ccc;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.voice {
+  font-size: 20px;
+  border-radius: 50%;
+  border: 0.5px solid #ccc;
+  padding: 10px 12px;
+}
+.record,
+.options,
+.bell {
+  font-size: 25px;
+}
+
+.user img {
+  border-radius: 50%;
+  width: 35px;
+}
+
+.trending {
+  margin-left: 90px;
+  margin-block: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* background-color: black; */
+  color: white;
+}
+.trending button {
+  font-size: 15px;
+  border: 0.5px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.content {
+  margin-left: 80px;
+  padding-block: 20px;
+  margin-block: 30px;
+
+  display: flex;
+
+  background-color: #ccc;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-inline: 10px;
+  gap: 20px;
+}
+.card {
+  /* border: 1px solid #ccc; */
+  width: 22vw;
+}
+
+.card-img img {
+  width: 22vw;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.user-img img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* .channel-name , .views{
+    text-align: left;
+} */
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: none;
+  }
+  .searchbar {
+    display: none;
+  }
+
+  .voice {
+    display: none;
+  }
+
+  .trending {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 9px;
+  }
+
+  .card,
+  .card-img img {
+    width: 80vw;
+  }
+
+  .content {
+    justify-content: center;
+  }
+
+  nav,
+  .trending,
+  .content {
+    margin-left: 0;
+    padding-left: 10px;
+  }
+}
